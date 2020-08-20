@@ -6,13 +6,14 @@
 header{
     width:100vw;
     height: 10vh;
-    background-color: black;
+    background-color: #555554;
     display:flex;
     align-items: center;
     position:fixed;
     transition: all 0.3s;
-    color:white;
+    color:rgb(240,245,5);
     justify-content: center;
+    font-family: 'Audiowide', cursive;
 }
 h1{
     padding-left:40px;
@@ -28,11 +29,11 @@ section{
 .about, .services{
     background-color: white;
     height: 100vh;
-    color: black;
+    color: rgba(0,0,0,0.9);
 }
 .change{
-    background-color: white;
-    color:black;
+    
+    color:rgb(240,245,5);
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 }   
 
