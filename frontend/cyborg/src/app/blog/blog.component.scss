@@ -1,0 +1,9 @@
+section{
+    display:grid;
+    place-items:center;
+}
+.card{
+    margin: 10px;
+    z-index: -1;
+    height: max-content;
+}
