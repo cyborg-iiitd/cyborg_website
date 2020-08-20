@@ -58,8 +58,8 @@ section{
     visibility:visible;
 }
 .offcanvas{
-    width:350px;
-    visibility: hidden;
+    width:150px;
+    visibility: visible;
     transform:translateX(-100%);
     transition:all .2s;
     border-radius:0; 
@@ -71,18 +71,24 @@ section{
     height: 100%;
     z-index: 1200;
     background-color: #fff;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.2s ease-in-out;
 }
 .offcanvas.offcanvas-right {
    right: 0;
    left: auto;
    transform: translateX(100%); 
+   transition: all 0.2s ease-in-out;
  }
 .offcanvas.show{
     visibility: visible;
     transform: translateX(0);
-    transition: transform .2s;
+    transition: all .2s;
+}
+.offcanvas:hover{
+    width:350px;
+    transition: all 0.3s ease-in-out;
 }
 .offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
 
@@ -142,4 +148,36 @@ li:hover a{
 }
 .menu li a:hover::before{
     width: 15px;
+}
+
+@media(max_width-600px){
+    .offcanvas{
+        width:350px;
+        visibility: invisible;
+        transform:translateX(-100%);
+        transition:all .2s;
+        border-radius:0; 
+        box-shadow: 0 5px 10px rgba(0,0,0, .2);
+        display:block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1200;
+        background-color: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+    .offcanvas.offcanvas-right {
+       right: 0;
+       left: auto;
+       transform: translateX(100%); 
+       transition: all 0.2s ease-in-out;
+     }
+    .offcanvas.show{
+        visibility: visible;
+        transform: translateX(0);
+        transition: all .2s;
+    }
 }
