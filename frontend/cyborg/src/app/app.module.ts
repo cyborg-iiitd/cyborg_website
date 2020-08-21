@@ -8,16 +8,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BlogComponent } from './blog/blog.component';
+import { HomeComponent } from './home/home.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button'; 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BlogComponent
+    BlogComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    MatCardModule,
+    MatButtonModule,
     AppRoutingModule
   ],
   providers: [],

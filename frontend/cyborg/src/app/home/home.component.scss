@@ -1,0 +1,81 @@
+.parallax {
+    background-image: url("../../assets/c3.png");
+    height: 90vh;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    background-image: url("../../assets/c6.jpg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+#heading{
+    min-height: 100px;
+    background-color: rgb(239,243,0);
+    padding: 50px;
+    margin-bottom: 50px;
+    color: black;   
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-family: 'Lobster Two', cursive;
+}
+#heading>h1{
+    font-size: 5rem ;
+    
+}
+.example-card {
+    max-width: 100%;
+}
+
+/*  trying */
+
+
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+.container1 {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex
+}
+.container{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.shadow{
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    padding: 50px;
+    min-height: 20rem;
+}
+.text, .text1 {
+  font-size: 28px;
+  color: rgb(86,86,78)  ;
+}
+.text{
+    font-weight: bolder;
+}
+.text1{
+    font-weight:lighter;
+}
+.dud {
+  color: rgb(86,86,78)  ;
+}
+
+@media(max-width:800px){
+    .shadow{
+        min-height: 50rem !important;
+    }
+}
