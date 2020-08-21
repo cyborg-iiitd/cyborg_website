@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+html,body{
+    scroll-behavior: smooth;
+}

@@ -6,10 +6,10 @@
 header{
     width:100vw;
     height: 10vh;
-    background-color: #555554;
+    background-color: black;
     display:flex;
     align-items: center;
-    position:fixed;
+    position:absolute;
     transition: all 0.3s;
     color:rgb(240,245,5);
     justify-content: center;
@@ -58,7 +58,7 @@ section{
     visibility:visible;
 }
 .offcanvas{
-    width:150px;
+    width:170px;
     visibility: visible;
     transform:translateX(-100%);
     transition:all .2s;
@@ -70,7 +70,7 @@ section{
     left: 0;
     height: 100%;
     z-index: 1200;
-    background-color: #fff;
+    background-color: black;
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.2s ease-in-out;
@@ -87,7 +87,7 @@ section{
     transition: all .2s;
 }
 .offcanvas:hover{
-    width:350px;
+    width:250px;
     transition: all 0.3s ease-in-out;
 }
 .offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
@@ -110,7 +110,7 @@ li{
     margin-top:21px;
 }
 a{
-    color:black;
+    color:#fff;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -122,35 +122,18 @@ a{
 }
 li:hover a{
     background-position: 100%;
-    color: #313131;
+    color: rgba(0,0,0,0.9);
     transform: translateX(16px);
 }
-
-/* trying  */
-.menu{
-    width:100%;
-    list-style: none;
+.hide{
+    opacity:0;
 }
-.menu li a {
-    align-items: center;
-    display: flex;
-    color:black;
-    text-decoration: none;
-}
-.menu li a:before{
-    content:"";
-    height:1px;
-    width:0;
-    background:black;
-    margin-left: 5px;
-    margin-right: 5px;
-    transition: 0.3s;
-}
-.menu li a:hover::before{
-    width: 15px;
+span{
+    position: absolute;
+    right:50px;
 }
 
-@media(max_width-600px){
+@media(max_width:600px){
     .offcanvas{
         width:350px;
         visibility: invisible;
@@ -164,7 +147,7 @@ li:hover a{
         left: 0;
         height: 100%;
         z-index: 1200;
-        background-color: #fff;
+        background-color: black;
         overflow-y: auto;
         overflow-x: hidden;
         transition: all 0.2s ease-in-out;
@@ -179,5 +162,10 @@ li:hover a{
         visibility: visible;
         transform: translateX(0);
         transition: all .2s;
+    }
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

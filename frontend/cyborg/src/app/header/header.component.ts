@@ -19,8 +19,10 @@ export class HeaderComponent implements OnInit {
     $(document).ready(function() {
       if($(window).width() <= 800){
         $(".offcanvas").removeClass("show");
+        $("i").removeClass("hide");
       }
       else{
+        $("i").addClass("hide");
         $(".offcanvas").addClass("show");
         
       }
