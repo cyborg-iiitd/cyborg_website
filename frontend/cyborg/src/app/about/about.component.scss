@@ -1,0 +1,415 @@
+.heading{
+    min-height: 100px;
+    background-color: rgb(239,243,0);
+    padding: 2rem;
+    margin-bottom: 50px;
+    color: black;   
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    opacity: 1;
+}
+h1{
+    font-family: 'Lobster Two', cursive;
+}
+.heading>h1{
+    font-size: 3rem ;
+}
+.container{
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+}
+.goal, .goal1{
+    padding-top: 0rem;
+}
+.about{
+    min-height: max-content;
+    margin-bottom:5rem;
+}
+ul{
+    list-style: circle;
+    padding-left: 5rem ;
+}
+@media only screen and (max-width:800px){
+    .about{
+        margin-top: -3rem ;
+    }
+    .goal{
+        margin-top: -200px;
+    }
+}
+
+
+/* trying */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Helvetica', sans-serif;
+}
+
+.container1 {
+	width: 60vw;
+	height: 70vh;
+	margin: 15vh auto;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+  color: white;
+  background-color: oldlace;
+  display: flex;
+  align-items: center;
+}
+
+.child {
+  margin-left: 0.5rem;
+	height: 90%;
+	scroll-snap-align: start;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.child:nth-child(1) {
+	background-color: darkorchid;
+    flex: 0 0 80%;
+    background: url("../../assets/c3.png");
+}
+
+.child:nth-child(2) {
+	background-color: indigo;
+    flex: 0 0 60%;
+    background: url("../../assets/c6.jpg");
+}
+
+.child:nth-child(3) {
+	background-color: yellow;
+    flex: 0 0 80%;
+    background: url("../../assets/c4.png");
+}
+
+.child:nth-child(4) {
+	background-color: orange;
+  flex: 0 0 60%;
+  background: url("../../assets/c6.jpg");
+}
+
+.child:nth-child(5) {
+	background-color: tomato;
+  flex: 0 0 80%;
+  background: url("../../assets/c8.jpg");
+}
+
+/* trying 1*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+/**
+  * style variables
+*/
+/**
+  * Control & indicator mixin
+*/
+.carousel {
+  height: 70vh;
+  width: 70vw;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  list-style: none;
+/**
+  * Where the magic happens
+  */
+/**
+    * Control element - right/left arrows
+  */
+/**
+    * Element for holding slide indicators
+  */
+/**
+    * Indicator for indicating active slide
+  */
+/**
+    * Create rules for when slides are contained within a track
+  */
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  opacity: 0.35;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 10px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.carousel__track .carousel__slide:nth-of-type(1) {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.carousel__track .carousel__slide:nth-of-type(3) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+.carousel__track .carousel__slide:nth-of-type(4) {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+.carousel__track .carousel__slide:nth-of-type(5) {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+}
+.carousel--scale .carousel__slide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  opacity: 0;
+}
+/**
+  * Theming
+*/
+
+.carousel-container {
+  display: inline-block;
+}
+.my-carousel {
+  border-radius: 5px;
+
+}
+.carousel__slide {
+  overflow: hidden;
+}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+
+.carousel__indicator {
+  background-color: #fafafa;
+}
+.carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("../../assets/c1.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+    background-image: url("../../assets/c2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(3),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+    background-image: url("../../assets/c10.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(4),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
+    background-image: url("../../assets/c3.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(5),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(5) {
+    background-image: url("../../assets/c4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and(max-width:800px){
+    .carousel{
+        width: 100vw;
+        height: 50vh;
+    }
+}

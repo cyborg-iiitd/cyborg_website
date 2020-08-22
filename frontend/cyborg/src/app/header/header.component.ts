@@ -11,11 +11,8 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const header=document.querySelector("header");
-    window.addEventListener("scroll",()=>{
-        header.classList.toggle("change",window.scrollY>10);
-        console.log(window.scrollY);
-    });
+    
+    
     $(document).ready(function() {
       if($(window).width() <= 800){
         $(".offcanvas").removeClass("show");

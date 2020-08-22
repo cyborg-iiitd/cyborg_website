@@ -11,14 +11,17 @@ import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component'; 
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BlogComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     MatSidenavModule,
     MatCardModule,
     MatButtonModule,
+    MatCarouselModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

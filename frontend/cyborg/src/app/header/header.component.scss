@@ -9,11 +9,12 @@ header{
     background-color: black;
     display:flex;
     align-items: center;
-    position: absolute;;
+    position: absolute;
     transition: all 0.3s;
     color:rgb(240,245,5);
     justify-content: center;
     font-family: 'Audiowide', cursive;
+    z-index: 1000;
 }
 h1{
     padding-left:40px;
