@@ -10,13 +10,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BlogComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
