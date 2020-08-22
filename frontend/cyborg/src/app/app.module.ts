@@ -26,7 +26,6 @@ import { FooterComponent } from './footer/footer.component';
     MatSidenavModule,
     MatCardModule,
     MatButtonModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
