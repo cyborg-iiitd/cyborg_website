@@ -7,7 +7,6 @@ header{
     width:100vw;
     height: 10vh;
     background-color: rgba(0,0,0,0.7);
-    // background-image: linear-gradient( 90.1deg,  rgba(158,252,203,1) 16.8%, rgba(63,100,255,1) 105.2% );
     display:flex;
     align-items: center;
     position: absolute;
@@ -95,8 +94,8 @@ section{
 }
 .offcanvas:hover .d{
     display: inline;
-    transition: display 100ms ease-in-out;
-    transition-delay: 0.3s;
+    transition: display 0.3s ease-in-out;
+    // transition-delay: 1s;
 }
 .offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
 
@@ -138,6 +137,7 @@ li:hover a{
 .d{
     display: none;
     transition: display 100ms ease-in-out;
+    // transition-delay: 0.3;
 }
 .hide{
     opacity:0;

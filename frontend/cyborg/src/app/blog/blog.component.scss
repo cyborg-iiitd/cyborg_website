@@ -97,3 +97,58 @@ h1>a{
   color: blue;
 
 }
+
+/* trying */
+.card1{
+  position:relative;
+  width:300px;
+  height:400px;
+  margin: auto;
+  border-radius: 25px;
+  background-size:cover;
+  overflow:hidden;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-top:4%;
+}
+#first {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 100%),
+  url("../../assets/isgw.jpg");
+}
+
+#second{
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 100%),
+  url("../../assets/linefollower.jpeg");
+  
+}
+#third{
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 100%),
+  url("../../assets/smart bin.png");
+  
+}
+#fourth{
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 100%),
+  url("../../assets/Window Cleaning Drone(Hover).jpeg");
+
+}
+// .card1:nth-child(1){}
+.card1 h1{
+  position: absolute;
+  color:white;
+  bottom:3%;
+  width:100%;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+ .card1 p{
+  position: absolute;
+  color:white;
+  bottom:-50px;
+  width:100%;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+ }
+ .card1:hover p, .card1:hover h1{
+  transform : translateY(-50px);
+  transition: all 0.5s ease-in-out;
+}
