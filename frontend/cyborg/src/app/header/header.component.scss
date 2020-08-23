@@ -6,15 +6,17 @@
 header{
     width:100vw;
     height: 10vh;
-    background-color: black;
+    background-color: rgba(0,0,0,0.7);
+    // background-image: linear-gradient( 90.1deg,  rgba(158,252,203,1) 16.8%, rgba(63,100,255,1) 105.2% );
     display:flex;
     align-items: center;
     position: absolute;
     transition: all 0.3s;
-    color:rgb(240,245,5);
+    color:rgb(255,255,255);
     justify-content: center;
     font-family: 'Audiowide', cursive;
     z-index: 1000;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 }
 h1{
     padding-left:40px;
@@ -59,7 +61,7 @@ section{
     visibility:visible;
 }
 .offcanvas{
-    width:170px;
+    width:50px;
     visibility: visible;
     transform:translateX(-100%);
     transition:all .2s;
@@ -71,7 +73,7 @@ section{
     left: 0;
     height: 100%;
     z-index: 1200;
-    background-color: black;
+    background-color: rgba(0,0,0,0.7);
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.2s ease-in-out;
@@ -90,6 +92,11 @@ section{
 .offcanvas:hover{
     width:250px;
     transition: all 0.3s ease-in-out;
+}
+.offcanvas:hover .d{
+    display: inline;
+    transition: display 100ms ease-in-out;
+    transition-delay: 0.3s;
 }
 .offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
 
@@ -110,6 +117,9 @@ ul{
 li{
     margin-top:21px;
 }
+li i{
+    visibility: visible;
+}
 a{
     color:#fff;
     text-decoration: none;
@@ -119,12 +129,15 @@ a{
     background-image: linear-gradient(120deg, transparent 50%, white 50%);
     background-size: 250%;
     transition:all 0.4s;
-
 }
 li:hover a{
     background-position: 100%;
     color: rgba(0,0,0,0.9);
     transform: translateX(16px);
+}
+.d{
+    display: none;
+    transition: display 100ms ease-in-out;
 }
 .hide{
     opacity:0;
@@ -132,6 +145,11 @@ li:hover a{
 span{
     position: absolute;
     right:1rem;
+    transition: all 0.2s ease-in-out ;
+}
+.rotate{
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out ;
 }
 
 @media(max_width:600px){

@@ -4,10 +4,15 @@ section{
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 5px;
+    margin: 4%;
     text-align: center;
     font-family: arial;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+    /*background-color: rgba(135, 206, 235,0.7);*/
+    // background-color:#cffffe;
+    // background-image: linear-gradient( 89.2deg,  rgba(191,241,236,1) 22.3%, rgba(109,192,236,1) 84.1% );
+    border-radius: 20px;
   }
   
   .price {
@@ -27,6 +32,14 @@ section{
     font-size: 18px;
   }
   
+  .card:hover{
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+  }
+
+  a{
+    border-radius: 20px ;
+  }
   .card button:hover {
     opacity: 0.7;
   }
@@ -48,16 +61,39 @@ section{
 }
 #projects{
     min-height: 100px;
-    background-color: rgb(239,243,0);
     padding: 50px;
     margin-bottom: 50px;
     color: black;   
     border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    // box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
+    width: 100vw;
 }
 h1{
-    font-family: 'Lobster Two', cursive;
+    // font-family: 'Lobster Two', cursive;
+    font-family: 'PT Serif', serif;
 }
 #projects>h1{
     font-size: 5rem ;
+}
+
+/* card trying */
+.card-new{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    transition: all 0.2s ease-in-out;
+}
+@media (min-width: 576px){
+  .card-group>.card+.card {
+      margin-left: 25px;
+      border-left: 0;
+  }
+}
+
+h1>a{
+  color: blue;
+
 }

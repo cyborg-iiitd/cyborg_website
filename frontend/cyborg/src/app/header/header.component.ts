@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import $ from "jquery";
+// declare var $:JQueryStatic;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -32,6 +33,7 @@ export class HeaderComponent implements OnInit {
             $(offcanvas_id).toggleClass("show");
             $('body').toggleClass("offcanvas-active");
             $(".screen-overlay").toggleClass("show");
+            $('span').toggleClass("rotate");
           }
       }); 
       $(document).on('keydown', function(event) {
