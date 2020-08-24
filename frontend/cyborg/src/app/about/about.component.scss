@@ -10,6 +10,13 @@
     justify-content: center;
     width: 100vw;
     opacity: 1;
+    transition: all 0.3s  ease-in-out;
+}
+.heading:hover{
+  background-color: black ;
+  color: white;
+  transform : translateY(5px);
+  transition: all 0.3s ease-in-out ;
 }
 h1{
     font-family: 'Lobster Two', cursive;
@@ -430,7 +437,6 @@ body {
   text-align: center;
   font-family: arial;
   opacity: 0;
-  transform: scale(0);
 }
 
 .card:hover{
@@ -476,6 +482,6 @@ button:hover, a:hover {
 
 .fade{
   opacity: 1 !important;
-  transform: scale(1) ;
+  transform: translateY(-20px) ;
   transition: all 0.5s ease-in-out;
 }
