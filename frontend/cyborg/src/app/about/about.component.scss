@@ -1,11 +1,11 @@
 .heading{
     min-height: 100px;
-    background-color: rgb(239,243,0);
+    background-color: white;
     padding: 2rem;
     margin-bottom: 50px;
     color: black;   
     border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -115,8 +115,8 @@ body {
   * Control & indicator mixin
 */
 .carousel {
-  height: 70vh;
-  width: 70vw;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -276,12 +276,12 @@ body {
   opacity: 1;
 }
 .carousel__control--backward {
-  left: 10px;
+  left: 100px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
 .carousel__control--forward {
-  right: 10px;
+  right: 100px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -376,6 +376,11 @@ body {
 .carousel__indicator {
   background-color: #fafafa;
 }
+.carousel__slide h1{
+  position: relative;
+  top: 50%;
+  color: white;
+}
 .carousel__slide:nth-of-type(1),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
   background-image: url("../../assets/c1.png");
@@ -412,4 +417,65 @@ body {
         width: 100vw;
         height: 50vh;
     }
+}
+
+
+
+/* team cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // min-width: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: arial;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  background-color: #000;
+  color: white !important;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover i{
+  color: white !important;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+i{
+  margin: 2px;
+}
+p>a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.fade{
+  opacity: 1 !important;
+  transform: scale(1) ;
+  transition: all 0.5s ease-in-out;
 }

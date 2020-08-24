@@ -34,16 +34,32 @@ export class AboutComponent implements OnInit {
       }
       console.log(window.scrollY);
     });
-    $(document).ready(function() {
-      if($(window).width() <= 800){
-        $('#carousel').removeClass("container");
-      }
-      else{
-        $('#carousel').removeClass("container");
-        $('#carousel').addClass("container");
+    const targets = document.querySelectorAll(".card");
+    const lazyload = target =>{
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry =>{
+          if(entry.isIntersecting){
+            const img = entry.target;
+            // const src= img.getAttribute("data-lazy");
+            // img.setAttribute('src', src);
+            img.classList.add("fade");
+            observer.disconnect();
+          }
+        });
+      });
+      io.observe(target);
+    } 
+    targets.forEach(lazyload);
+    // $(document).ready(function() {
+    //   if($(window).width() <= 800){
+    //     $('#carousel').removeClass("container");
+    //   }
+    //   else{
+    //     $('#carousel').removeClass("container");
+    //     $('#carousel').addClass("container");
 
-      }
-    });
+    //   }
+    // });
   }
 
 }
