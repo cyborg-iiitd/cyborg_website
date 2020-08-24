@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
         
       }
       $("[data-trigger]").on("click", function(e){
-          if($(window).width() <= 800){
+          if($(window).width() <= 1000){
             // $('#div2').toggle({"display":"block"});
             e.preventDefault();
             e.stopPropagation();
@@ -43,7 +43,7 @@ export class HeaderComponent implements OnInit {
           }
       });
       $(".btn-close, .screen-overlay").click(function(e){
-        if($(window).width() <= 800){
+        if($(window).width() <= 1000){
           $(".screen-overlay").removeClass("show");
           $(".offcanvas").removeClass("show");
           $("body").removeClass("offcanvas-active");
