@@ -53,7 +53,7 @@ section{
     background-image: linear-gradient(120deg, transparent 50%, white 50%);
     background-size: 250%;
     transition:all 0.4s;
-}
+  }
  .card a:hover{
     font-weight: bolder;
     background-position: 100%;
@@ -67,7 +67,7 @@ section{
     border-radius: 10px;
     // box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
+    // background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
     width: 100vw;
 }
 h1{
@@ -95,7 +95,6 @@ h1{
 
 h1>a{
   color: blue;
-
 }
 
 /* trying */
@@ -107,8 +106,13 @@ h1>a{
   border-radius: 25px;
   background-size:cover;
   overflow:hidden;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  // background-position: bottom;
+  // background-repeat: no-repeat;
+  
+  // background-attachment: fixed;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  background-size: cover;
   margin-top:4%;
 }
 #first {
@@ -150,5 +154,61 @@ h1>a{
  }
  .card1:hover p, .card1:hover h1{
   transform : translateY(-50px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* trying new card */
+.container1{
+  position: relative;
+  width: 350px;
+  height: 250px;
+}
+.card2{
+  // position: absolute;
+  top: 0;
+  left:0;
+  background: #FFFF;
+  width: 300px;
+  height: max-content;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  font-size: 12px;
+  overflow: hidden;
+}
+.image{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+.detail{
+  padding: 15px 20px;
+  position: relative;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  
+}
+.detail h3{
+  font-size: 15px;
+  margin: 0;
+}
+// .detail i{
+//   font-size:10px;
+//   margin-bottom: 5px;
+//   color: #fc686d;
+// }
+.detail p{
+  font-size:13px;
+  font-weight: 500;
+  color: #868686;
+  margin: 0;
+}
+.card2:hover .detail{
+  transform: translateY(-100px);
   transition: all 0.5s ease-in-out;
 }

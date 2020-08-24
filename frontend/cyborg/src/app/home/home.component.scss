@@ -27,7 +27,8 @@
     width: 100vw;
 }
 h1{
-    font-family: 'Lobster Two', cursive;
+    // font-family: 'Lobster Two', cursive;
+    font-family: 'PT Serif', serif;
 }
 .heading>h1{
     font-size: 3rem ;
@@ -58,6 +59,7 @@ h1{
     box-shadow: 0px 10px 10px rgba(0,0,0,0.5);*/
     padding: 3rem;
     min-height: 20rem;
+    // box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
 .about{
     padding:3rem;
