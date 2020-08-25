@@ -91,11 +91,7 @@ section{
     width:250px;
     transition: all 0.3s ease-in-out;
 }
-.offcanvas:hover .d{
-    display: inline;
-    transition: display 0.3s ease-in-out;
-    // transition-delay: 1s;
-}
+
 .offcanvas .btn-close{ position: absolute; right:15px; top:15px; }
 
 nav{
@@ -135,8 +131,18 @@ li:hover a{
 }
 .d{
     display: none;
+    // display: inline;
+    // visibility: hidden;
     transition: display 100ms ease-in-out;
+    // width: 0px;
     // transition-delay: 0.3;
+}
+.offcanvas:hover .d{
+    display: inline;
+    // width: max-content;
+    transition: display 0.3s ease-in-out;
+    // transition-delay: 1s;
+    // visibility: visible;
 }
 .hide{
     opacity:0;
