@@ -1,0 +1,46 @@
+input, textarea{
+    outline: none;
+    border: none;
+    border-bottom: rgba(0,0,0,0.5) solid 0.5px;
+    width: 100%;
+    margin: 1rem;
+    padding: 20px;
+  }
+  button:active, button:focus{
+    outline: none;
+    border: none;
+  }
+  .col-12{
+    justify-content: center;
+    text-align: center;
+  }
+h1, h2, h3 , h4, h5, h6{
+    font-family: 'Lobster Two', cursive;
+}
+.heading{
+    min-height: 100px;
+    background-color: white;
+    padding: 2rem;
+    color: black;   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    opacity: 1;
+    transition: all 0.3s  ease-in-out;
+    position: relative;
+    top: 5rem;
+}
+.heading:hover{
+  background-color: black ;
+  color: white;
+  transform : translateY(5px);
+  cursor: none;
+  transition: all 0.3s ease-in-out ;
+}
+.container{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
