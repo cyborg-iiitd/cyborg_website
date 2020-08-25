@@ -514,3 +514,27 @@ button:hover, a:hover {
 .content, .interests{
   transition: all 0.5s ease-in-out;
 }
+
+/* form */
+.ng-valid[required], .ng-valid.required{
+  border-left:5px solid green;
+}
+.ng-invalid:not(form){
+  border-left:5px solid red;
+}
+input, textarea{
+  outline: none;
+  border: none;
+  border-bottom: rgba(0,0,0,0.5) solid 0.5px;
+  width: 100%;
+  margin: 1rem;
+  padding: 20px;
+}
+button:active, button:focus{
+  outline: none;
+  border: none;
+}
+.col-12{
+  justify-content: center;
+  text-align: center;
+}
