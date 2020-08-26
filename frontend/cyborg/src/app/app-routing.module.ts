@@ -5,11 +5,12 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { EventsComponent } from './events/events.component';
 const routes: Routes = [
   {path: "", component:HomeComponent},
   {path: "about", component:AboutComponent},
   {path: "projects", component:BlogComponent},
-  
+  {path: "events", component:EventsComponent}
 ];
 
 @NgModule({

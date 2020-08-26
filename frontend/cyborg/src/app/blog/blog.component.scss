@@ -93,9 +93,6 @@ h1{
   }
 }
 
-h1>a{
-  color: blue;
-}
 
 /* trying */
 .card1{
@@ -242,6 +239,7 @@ h1>a{
 }
 h1, h2, h3 , h4, h5, h6{
   font-family: 'Lobster Two', cursive;
+  font-size: 5rem;
 }
 .heading>h1{
   font-size: 3rem ;
@@ -271,4 +269,42 @@ a:hover {
   background-position: 100%;
   color: white;
   // transform: translateX(16px);
+}
+
+/* header projects */
+.header{
+  background-color: darkblue;
+  // padding: 1rem;
+}
+.col-xl-1, .col-md-1, .col-lg-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+}
+h1{
+  margin: 0px -400px 0px 0px ;
+  z-index:100;
+  font-size: 250px;
+}
+
+@media only screen and (max-width:800px){
+  h1{
+    margin:  0px 0px -100px 0px;
+    color: white;
+    z-index: 100;
+    font-size: 100px;
+  }
+  .col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+  }
+  .col-sm-12, .col-xs-12{
+    padding: 0px;
+  }
+  img{
+    z-index: 1;
+  }
 }

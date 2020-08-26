@@ -1,16 +1,16 @@
 .heading{
-    min-height: 100px;
-    background-color: white;
-    padding: 2rem;
-    
-    color: black;   
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    opacity: 1;
-    transition: all 0.3s  ease-in-out;
+  min-height: 100px;
+  background-color: white;
+  padding: 2rem;
+  
+  color: black;   
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  opacity: 1;
+  transition: all 0.3s  ease-in-out;
 }
 .heading:hover{
   background-color: black ;

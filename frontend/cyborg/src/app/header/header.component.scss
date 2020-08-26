@@ -17,9 +17,11 @@ header{
     z-index: 1000;
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 }
-h1{
-    padding-left:40px;
+h1, h2{
+    // padding-left:40px;
+    font-weight: lighter;
     cursor: pointer;
+    font-family: 'Audiowide', cursive;
 }
 section{
     display:grid;

@@ -58,10 +58,14 @@ iframe{
 }
 .align{
     margin-left: 100px;
+    margin: auto;
+    padding-left: 50px;
 }
 @media only screen and (max-width:800px){
     footer{
         margin-left: 0;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     iframe{
         height:auto;

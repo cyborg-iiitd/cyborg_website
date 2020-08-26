@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component'; 
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     HomeComponent,
     FooterComponent,
     AboutComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

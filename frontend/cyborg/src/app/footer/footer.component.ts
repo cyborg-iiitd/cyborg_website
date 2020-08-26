@@ -13,18 +13,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $(document).ready(function() {
-      if($(window).width() <= 800){
-        $("ul").removeClass("container");
-        $("ul").removeClass("align");
-        $("ul").addClass("container");
-      }
-      else{
-        $("ul").removeClass("container");
-        $("ul").removeClass("align");
-        $("ul").addClass("align");
-      }
-    });
+    
   }
 
 }
