@@ -6,7 +6,7 @@
 header{
     width:100vw;
     height: 10vh;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,1);
     display:flex;
     align-items: center;
     position: absolute;
@@ -73,7 +73,7 @@ section{
     left: 0;
     height: 100%;
     z-index: 1200;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,1);
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.2s ease-in-out;
@@ -131,6 +131,11 @@ li:hover a{
     color: rgba(0,0,0,0.9);
     transform: translateX(16px);
 }
+// .offcanvas .d h1{
+//     transition: typing 3.6s steps(30,end);
+//     // transition: all 0.3s ease-in-out;
+//     transition-delay: 0.3s;
+// }
 .d{
     display: none;
     // display: inline;
@@ -139,6 +144,10 @@ li:hover a{
     // width: 0px;
     // transition-delay: 0.3;
 }
+// .offcanvas:hover .d:hover h1{
+//     transition: typing 3.6s steps(30,end);
+//     // transition: all 0.3s ease-in-out;
+// }
 .offcanvas:hover .d{
     display: inline;
     // width: max-content;
