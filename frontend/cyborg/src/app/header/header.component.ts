@@ -51,6 +51,18 @@ export class HeaderComponent implements OnInit {
       }); 
       }); // jquery end
 
+      // window.onscroll = function() {scrollFunction()};
+
+      // function scrollFunction() {
+      //   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      //     document.getElementById("navbar").style.padding = "30px 10px";
+      //     document.querySelector("h1").style.fontSize = "40px";
+      //   } else {
+      //     document.getElementById("navbar").style.padding = "80px 10px";
+      //     document.querySelector("h1").style.fontSize = "50px";
+      //   }
+      // }
+
   }
 
 }

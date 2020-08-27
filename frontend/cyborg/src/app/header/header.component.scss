@@ -6,18 +6,20 @@
 header{
     width:100vw;
     height: 10vh;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.7);
     display:flex;
     align-items: center;
-    position: absolute;
+    position: fixed;
     transition: all 0.3s;
     color:rgb(255,255,255);
     justify-content: center;
     font-family: 'Audiowide', cursive;
     z-index: 1000;
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+    transition: all 0.5s ease-in-out;
 }
 h1, h2{
+    transition: all 0.5s ease-in-out;
     // padding-left:40px;
     font-weight: lighter;
     cursor: pointer;
@@ -73,7 +75,7 @@ section{
     left: 0;
     height: 100%;
     z-index: 1200;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.7);
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.2s ease-in-out;

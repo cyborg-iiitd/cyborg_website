@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cyborgiiitd": {
+      "hosting": {
+        "cyborg": [
+          "cyborgiiitd"
+        ]
+      }
+    }
+  }
+}
