@@ -22,18 +22,18 @@ export class AboutComponent implements OnInit {
     "../../assets/c8.jpg",
   ];
   ngOnInit(): void {
-    const header=document.querySelector("header");
-    window.addEventListener("scroll",()=>{
-      header.classList.toggle("change",window.scrollY>10);
-      if(window.scrollY>600){
-        $('.heading').addClass("relative");
-      }
-      else{
-        $('.heading').removeClass("relative");
+    // const header=document.querySelector("header");
+    // window.addEventListener("scroll",()=>{
+    //   header.classList.toggle("change",window.scrollY>10);
+    //   if(window.scrollY>600){
+    //     $('.heading').addClass("relative");
+    //   }
+    //   else{
+    //     $('.heading').removeClass("relative");
 
-      }
-      console.log(window.scrollY);
-    });
+    //   }
+    //   console.log(window.scrollY);
+    // });
     const targets = document.querySelectorAll(".card");
     const lazyload = target =>{
       const io = new IntersectionObserver((entries, observer) => {
