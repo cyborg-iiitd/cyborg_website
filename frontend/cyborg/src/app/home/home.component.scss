@@ -142,6 +142,7 @@ ul.timeline > li:before {
     font-weight: 800;
     letter-spacing: 0.1rem;
     font-family: 'Audiowide', cursive;
+    padding-top: 5rem;
 }
 svg{
     position: absolute;
@@ -154,9 +155,37 @@ svg{
 // }
 .body{
     position: relative;
-    top: 200px;
+    top: 25rem;
     height: max-content;
 }
 .container{
     height: max-content;
+}
+
+@media only screen and (max-width: 800px){
+    .wavy h1{
+        text-align: center;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+        font-family: 'Audiowide', cursive;
+        padding-top: 2rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .wavy h1{
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+        font-family: 'Audiowide', cursive;
+        padding-top: 1rem;
+    }
+    .body{
+        position: relative;
+        top: 10rem;
+        height: max-content;
+    }
 }

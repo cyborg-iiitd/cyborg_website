@@ -92,7 +92,7 @@ section{
     transition: all .2s;
 }
 .offcanvas:hover{
-    width:250px;
+    width:270px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -117,6 +117,7 @@ li{
 }
 li i{
     visibility: visible;
+    margin: 5px;
 }
 a{
     color:#fff;
