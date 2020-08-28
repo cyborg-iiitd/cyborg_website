@@ -92,8 +92,9 @@ a{
     background-size: 250%;
     transition:all 0.4s;
 }
-.nav-links:hover a{
+.nav-links:hover a, p:hover a{
+    cursor: pointer;
     background-position: 100%;
     color: rgba(0,0,0,0.9);
-    // transform: translateX(16px);
+    transform: translateX(16px);
 }

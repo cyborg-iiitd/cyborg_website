@@ -40,6 +40,8 @@ export class HeaderComponent implements OnInit {
           if(event.keyCode === 27 && $(window).width() <= 800) {
              $(".offcanvas").removeClass("show");
              $("body").removeClass("overlay-active");
+            $('span').toggleClass("rotate");
+
           }
       });
       $(".btn-close, .screen-overlay").click(function(e){
@@ -47,6 +49,8 @@ export class HeaderComponent implements OnInit {
           $(".screen-overlay").removeClass("show");
           $(".offcanvas").removeClass("show");
           $("body").removeClass("offcanvas-active");
+          $('span').toggleClass("rotate");
+
         }
       }); 
       }); // jquery end

@@ -28,34 +28,34 @@ export class HomeComponent implements OnInit {
       "INTERESTING PROJECTS"
       ];
       const phrases1 = [
-      "We take part in frequent \n competitions in tech-fests and other events in colleges of Delhi and outside like DTU, NSIT, IIT Bombay. We not only take part but also organise our own mini and main hardware hackathons regularly.",
-      "We hold regular sessions and hackathons in college for juniors and new-comers on basics of programming in Arduino, RPi, Computer Vision and Control Theory. We also help freshers in their IED/PIS projects in first year.",
-      "We are involved in a number of interesting robotics projects ranging from Self-driving Cars and Rovers to Human-detection Drones, Comm Systems etc."
+      "<div class=\" col-12 d-flex justify-content-center  \"> <b >FREQUENT COMPETITIONS</b> </div>   We take part in frequent competitions in tech-fests and other events in colleges of Delhi and outside like DTU, NSIT, IIT Bombay. We not only take part but also organise our own mini and main hardware hackathons regularly .",
+      "<div class=\" col-12 d-flex justify-content-center  \"> <b >REGULAR SESSIONS</b> </div>  We hold regular sessions and hackathons in college for juniors and new-comers on basics of programming in Arduino, RPi, Computer Vision and Control Theory. We also help freshers in their IED/PIS projects in first year .",
+      "<div class=\" col-12 d-flex justify-content-center  \"> <b >INTERESTING PROJECTS</b> </div>  We are involved in a number of interesting robotics projects ranging from Self-driving Cars and Rovers to Human-detection Drones, Comm Systems etc ."
       ];
       
       
-      const el = document.querySelector(".text");
+      // const el = document.querySelector(".text");
       const el1 = document.querySelector(".text1");
-      const fx = new TextScramble(el);
+      // const fx = new TextScramble(el);
       const fx1 = new TextScramble(el1);
       
       let counter = 0;
       let counter1 = 0;
       
-      const next = () => {
-        fx.setText(phrases[counter]).then(() => {
-          setTimeout(next, 5000);
-        });
-        counter = (counter + 1) % phrases.length;
-      };
+      // const next = () => {
+      //   fx.setText(phrases[counter]).then(() => {
+      //     setTimeout(next, 5000);
+      //   });
+      //   counter = (counter + 1) % phrases.length;
+      // };
       const next1 = () => {
         fx1.setText(phrases1[counter1]).then(() => {
-          setTimeout(next1, 5000);
+          setTimeout(next1, 4000);
         });
         counter1 = (counter1 + 1) % phrases1.length;
       };
 
-      next();
+      // next();
       next1();
     //trying
   }
@@ -105,6 +105,7 @@ class TextScramble {
           this.queue[i].char = char;
         }
         output += `<span class="dud">${char}</span>`;
+        // output += `${char}`;
       } else {
         output += from;
       }

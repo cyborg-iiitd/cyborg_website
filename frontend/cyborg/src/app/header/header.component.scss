@@ -163,8 +163,10 @@ li:hover a{
 }
 span{
     position: absolute;
+    top:1rem;
     right:1rem;
     transition: all 0.2s ease-in-out ;
+    z-index: 1000;
 }
 .rotate{
     transform: rotate(90deg);

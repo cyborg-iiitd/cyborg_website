@@ -144,6 +144,12 @@ ul.timeline > li:before {
     font-family: 'Audiowide', cursive;
     padding-top: 5rem;
 }
+.wavy h6{
+    // padding-top: 5rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
 svg{
     position: absolute;
     top:0;
@@ -162,7 +168,7 @@ svg{
     height: max-content;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1172px){
     .wavy h1{
         text-align: center;
         font-size: 4rem;
@@ -171,6 +177,13 @@ svg{
         letter-spacing: 0.1rem;
         font-family: 'Audiowide', cursive;
         padding-top: 2rem;
+    }
+    .wavy h6{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        // padding-top: 2rem;
+
     }
 }
 @media only screen and (max-width: 500px){
@@ -181,7 +194,14 @@ svg{
         font-weight: 800;
         letter-spacing: 0.1rem;
         font-family: 'Audiowide', cursive;
-        padding-top: 1rem;
+        padding-top: 0.1rem;
+    }
+    .wavy h6{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: -1rem;
+
     }
     .body{
         position: relative;

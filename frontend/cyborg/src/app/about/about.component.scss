@@ -30,23 +30,22 @@ h1, h2, h3 , h4, h5, h6{
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.goal, .goal1{
-    padding-top: 0rem;
-}
+
 .about{
     min-height: max-content;
     margin-bottom:5rem;
 }
 ul{
-    list-style: circle;
-    padding-left: 5rem ;
+    list-style: none;
+    // padding-left: 5rem ;
 }
 @media only screen and (max-width:800px){
     .about{
         margin-top: -3rem ;
     }
-    .goal{
-        margin-top: -200px;
+    .goal, .goal1{
+        // margin-top: 200px;
+        margin-bottom: 70px;
     }
 }
 
@@ -439,11 +438,12 @@ body {
   font-family: arial;
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  // height:100%;
+  // height:50%;
 }
 
 .card:hover{
   transform: translateY(-10px);
+  // height:100%;
   height: fit-content;
   background-color: #000;
   color: white !important;
@@ -504,15 +504,19 @@ button:hover, a:hover {
   background-color: #000;
   transition: all 0.5s ease-in-out;
   color:white;
+  // visibility: visible;
 }
 .card:hover .content{
   color:white;
+  // visibility: visible;
   height: max-content;
   transform : translateY(-50px);
   background-color: #000;
   transition: all 0.5s ease-in-out;
 }
 .content, .interests{
+  // height:0%;
+  // visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
 
@@ -538,4 +542,11 @@ button:active, button:focus{
 .col-12{
   justify-content: center;
   text-align: center;
+}
+
+
+@media only screen and(max-width:500px){
+  .goal{
+
+  }
 }
