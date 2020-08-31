@@ -168,7 +168,23 @@ svg{
     height: max-content;
 }
 
-@media only screen and (max-width: 1172px){
+@media only screen and (max-width:1172px) and( min-width:100px){
+    .body{
+        position: relative;
+        top: 15rem;
+        height: max-content;
+    }
+    .wavy h1{
+        text-align: center;
+        font-size: 5rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+        font-family: 'Audiowide', cursive;
+        padding-top: 3rem;
+    }
+}
+@media only screen and (max-width: 999px) and (min-width: 501px){
     .wavy h1{
         text-align: center;
         font-size: 4rem;
@@ -176,7 +192,7 @@ svg{
         font-weight: 800;
         letter-spacing: 0.1rem;
         font-family: 'Audiowide', cursive;
-        padding-top: 2rem;
+        padding-top: 0;
     }
     .wavy h6{
         text-align: center;
@@ -184,6 +200,11 @@ svg{
         font-weight: 800;
         // padding-top: 2rem;
 
+    }
+    .body{
+        position: relative;
+        top: 10rem;
+        height: max-content;
     }
 }
 @media only screen and (max-width: 500px){
@@ -205,7 +226,22 @@ svg{
     }
     .body{
         position: relative;
-        top: 10rem;
+        top: 5rem;
+        height: max-content;
+    }
+}
+
+@media only screen and (min-width:1724px){
+    .body{
+        position: relative;
+        top: 30rem;
+        height: max-content;
+    }
+}
+@media only screen and (min-width:2200px){
+    .body{
+        position: relative;
+        top: 40rem;
         height: max-content;
     }
 }
