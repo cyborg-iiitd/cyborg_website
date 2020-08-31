@@ -105,6 +105,9 @@ nav{
     left:50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    align-items: center;    
+    // display: flex;
+    // justify-content: center;
 }
 ul{
     display:flex;
@@ -158,6 +161,9 @@ li:hover a{
     // transition-delay: 1s;
     // visibility: visible;
 }
+.offcanvas:hover ul{
+    align-items: stretch;
+}
 .hide{
     opacity:0;
 }
@@ -208,4 +214,11 @@ span{
         align-items: center;
         justify-content: space-between;
     }
+}
+
+.head{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
 }
