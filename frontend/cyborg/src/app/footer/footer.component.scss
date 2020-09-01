@@ -4,7 +4,7 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer{
-    min-height: 50vh;
+    // min-height: 50vh;
     width: 100vw;
     margin-top:auto;
     background-color: black;
@@ -105,3 +105,32 @@ a{
 .col-12 p{
     font-size: 1rem;
 }
+
+
+@media only screen and (max-width: 999px) and (min-width: 501px){
+    .upper{
+        margin-top:20rem; 
+    }
+}
+@media only screen and (max-width: 500px){
+    .upper{
+        margin-top:10rem; 
+    }
+    
+}
+@media only screen and(min-width: 1000px) and (max-width:1723px){
+    .upper{
+        margin-top:30rem; 
+    }
+}
+@media only screen and (min-width:1724px){
+    .upper{
+        margin-top:35rem; 
+    }
+}
+@media only screen and (min-width:2200px){
+    .upper{
+        margin-top:40rem; 
+    }
+}
+
