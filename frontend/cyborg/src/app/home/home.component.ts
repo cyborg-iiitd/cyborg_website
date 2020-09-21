@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ParticlesConfig } from './particles-config';
 
+declare let particlesJS: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -10,6 +12,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
+    
+    this.invokeParticles();
+    // var particleCanvas = new ParticleNetwork(canvasDiv, options);
     // trying 
   
         // ——————————————————————————————————————————————————
@@ -56,6 +61,9 @@ export class HomeComponent implements OnInit {
       // next();
       next1();
     //trying
+  }
+  public invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function() {});
   }
 
 }
@@ -119,5 +127,6 @@ class TextScramble {
   randomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
+  
 }
 

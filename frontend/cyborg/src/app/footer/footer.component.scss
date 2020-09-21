@@ -31,6 +31,7 @@ ul{
     display: flex;
     align-items: center;
     flex-direction: row;
+    // justify-content: space-around;
 }
 li{
     // padding: 10px;
@@ -109,7 +110,7 @@ a{
 
 @media only screen and (max-width: 999px) and (min-width: 501px){
     .upper{
-        margin-top:20rem; 
+        margin-top:0rem; 
     }
 }
 @media only screen and (max-width: 500px){
@@ -120,7 +121,7 @@ a{
 }
 @media only screen and(min-width: 1000px) and (max-width:1723px){
     .upper{
-        margin-top:30rem; 
+        margin-top:0rem; 
     }
 }
 @media only screen and (min-width:1724px){
