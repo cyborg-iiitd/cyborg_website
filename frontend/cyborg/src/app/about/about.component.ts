@@ -2,13 +2,17 @@ import { Component, OnInit } from '@angular/core';
 
 import $ from "jquery";
 
-import { data } from "../../assets/data";
+import { data } from "../../assets/data"; // member data
 
-import { Member } from "../../assets/member";
+import { Member } from "../../assets/member"; // member data
 
-import { Alumni } from '../../assets/alumni';
+import { Alumni } from '../../assets/alumni'; // class
 
-import { Alumni_data } from '../../assets/alumni_data';
+import { Alumni_data } from '../../assets/alumni_data'; // data
+
+import { Carousel } from '../../assets/about_us_carousel_class';
+
+import { Carousel_Data } from '../../assets/about_us_carousel_data';
 
 @Component({
   selector: 'app-about',
@@ -19,35 +23,17 @@ export class AboutComponent implements OnInit {
 
   data=data;
   AlumniData=Alumni_data;
+  carousel_data = Carousel_Data;
   members: Member[];
   alumni=[];
+  carousel=[];
   constructor() {
     this.getMembers();
     this.getAlumni();
+    this.getCarousel();
    }
 
-  slides=[
-    "../../assets/c3.png",
-    "../../assets/c6.jpg",
-    "../../assets/c10.jpg",
-    "../../assets/c2.jpg",
-    "../../assets/c4.png",
-    "../../assets/c6.jpg",
-    "../../assets/c8.jpg",
-  ];
   ngOnInit(): void {
-    // console.log(data);
-    // const header=document.querySelector("header");
-    // window.addEventListener("scroll",()=>{
-    //   header.classList.toggle("change",window.scrollY>10);
-    //   if(window.scrollY>600){
-    //     $('.heading').addClass("relative");
-    //   }
-    //   else{
-    //     $('.heading').removeClass("relative");
-    //   }
-    //   console.log(window.scrollY);
-    // });
     const targets = document.querySelectorAll(".card");
     const lazyload = target =>{
       const io = new IntersectionObserver((entries, observer) => {
@@ -64,16 +50,6 @@ export class AboutComponent implements OnInit {
       io.observe(target);
     } 
     targets.forEach(lazyload);
-    // $(document).ready(function() {
-    //   if($(window).width() <= 800){
-    //     $('#carousel').removeClass("container");
-    //   }
-    //   else{
-    //     $('#carousel').removeClass("container");
-    //     $('#carousel').addClass("container");
-
-    //   }
-    // });
   }
   
   temp:any;
@@ -88,6 +64,7 @@ export class AboutComponent implements OnInit {
       this.temp.Github=data[i]["Github Account"];
       this.temp.Linkedin=data[i]["LinkedIn Profile"];
       this.temp.Interests=data[i]["Academic Interests"];
+      this.temp.Image=data[i]['Image'];
       this.members.push(this.temp);
     }
   }
@@ -99,6 +76,16 @@ export class AboutComponent implements OnInit {
         this.temp.Name= Alumni_data[i]["Name"];
         this.temp.image= Alumni_data[i]["image"];
         this.alumni.push(this.temp);
+    }
+  }
+
+  getCarousel(){
+    this.carousel=[];
+    for(var i=0;i<this.carousel_data.length;i++){
+        this.temp = new Carousel();
+        this.temp.image = this.carousel_data[i].image;
+        this.temp.description = this.carousel_data[i].description;
+        this.carousel.push(this.temp);
     }
   }
 

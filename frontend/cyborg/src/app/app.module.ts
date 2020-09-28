@@ -16,6 +16,8 @@ import { AboutComponent } from './about/about.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { EventsComponent } from './events/events.component';
+import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,27 @@ import { EventsComponent } from './events/events.component';
     MatCardModule,
     MatButtonModule,
     MatCarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MarkdownModule.forRoot({ 
+       loader: HttpClient ,
+       markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          breaks: false,
+          pedantic: false,
+          smartLists: true,
+          smartypants: false,
+        },
+      },
+      // loader: HttpClientModule, 
+      // markedOptions: {
+      //   provide: MarkedOptions,
+      //   useFactory: markedOptionsFactory,
+      // },
+    }),
+    MarkdownModule.forChild(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

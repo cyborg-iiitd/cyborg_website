@@ -6,4 +6,5 @@ export class Member{
     "Github": String
     "Linkedin": String
     "Interests":String
+    "Image":String
 }

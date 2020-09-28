@@ -1,9 +1,26 @@
 <div class="head d-flex justify-content-center align-items-center   " style="height: 50vh;">
     <h1>events</h1>
 </div>
-<div class="card d-flex align-items-center" style="box-shadow: 0px 4px 8px rgba(0,0,0,0.35); min-height:50vh;">
-    <h2>Sessions</h2>
+<div class="card" style="box-shadow: 0px 4px 8px rgba(0,0,0,0.35); ">
+    <h2 style="align-self: center;">Sessions</h2>
+    <div class="container">
+        <div class="row d-flex justify-content-around mb-5">
+            <div class="card col-3" *ngFor="let i of data_array" style="margin-left: auto;">
+                <img class="card-img-top" src="{{i.Image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.Title}}</h5>
+                    <p class="card-text" style="align-self: flex-end;">{{i.Date}}</p>
+                    <p class="card-text">{{i.Description}}</p>
+                    <div class="card-body d-flex justify-content-center align-items-center">
+                        <a href="{{i.Drive}}" class="card-link"><i class="fab fa-google-drive"></i></a>
+                        <a href="{{i.Github}} " class="card-link"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="card d-flex align-items-center" style="box-shadow: 0px 4px 8px rgba(0,0,0,0.35); min-height:50vh;">
     <h2>Contests</h2>
     <h6>Comming soon... </h6>

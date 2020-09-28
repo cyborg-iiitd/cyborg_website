@@ -29,20 +29,8 @@
           <label class="carousel__control carousel__control--forward" for="F"></label>
         </div>
         <div class="carousel__track">
-          <li class="carousel__slide" style="background-image: url('../../assets/c1.png');">
-            <h1> We provide technical help to students working on interesting projects. </h1>
-          </li>
-          <li class="carousel__slide">
-            <h1> Lorem ipsumcxz</h1>
-          </li>
-          <li class="carousel__slide">
-            <h1> Lorem ipsum erfwe</h1>
-          </li>
-          <li class="carousel__slide">
-            <h1> werLorem ipsum</h1>
-          </li>
-          <li class="carousel__slide">
-            <h1> Lorem ipsum</h1>
+          <li class="carousel__slide" *ngFor="let i of carousel" style="background-image: url({{i.image}});">
+            <h3> {{i.description}}</h3>
           </li>
         </div>
         <div class="carousel__indicators">
@@ -126,25 +114,6 @@
         </div>
     </div>    
 </div>
-<!--<main class="container1">
-	<div class="child">
-		<h2>Image 1</h2>
-	</div>
-	<div class="child">
-		<h2>Image 2</h2>
-	</div>
-	<div class="child">
-		<h2>Image 3</h2>
-	</div>
-	<div class="child">
-		<h2>Image 4</h2>
-	</div>
-	<div class="child">
-		<h2>Image 5</h2>
-	</div>
-</main>
-
--->
 <div class="heading ">
   <h1 style="justify-content: center; display: flex;">
      Meet the Team
@@ -156,7 +125,7 @@
 
       <div class="col-xs-12 col-sm-3 col-lg-3 col-xl-3  d-flex align-items-stretch" style="margin-bottom: 20px;" *ngFor="let m of members">
         <div class="card h-100">
-          <img src="../../assets/cyborg_team/{{m.Name}}.jpg" alt="{{m.Name}}" style="width:100%">
+          <img src="{{m.Image}}" alt="{{m.Name}}" style="width:100%">
           <div class="content">
             <h3>{{m.Name}}</h3>
             <p class="title">{{m.Designation}}</p>
