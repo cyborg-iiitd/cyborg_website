@@ -8,7 +8,7 @@
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  // width: 100vw;
   opacity: 1;
   transition: all 0.3s  ease-in-out;
 }
@@ -36,7 +36,7 @@ h1, h2, h3 , h4, h5, h6{
     margin-bottom:5rem;
 }
 ul{
-    list-style: none;
+    list-style: circle;
     // padding-left: 5rem ;
 }
 @media only screen and (max-width:800px){
