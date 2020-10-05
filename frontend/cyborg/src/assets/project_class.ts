@@ -5,5 +5,5 @@ export class Project{
     "Drive": String
     "Image": String
     "MDFilePath": String
-    "Members":[]
+    "Members":String[]
 }

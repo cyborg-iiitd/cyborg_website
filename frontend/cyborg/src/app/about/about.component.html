@@ -29,7 +29,7 @@
           <label class="carousel__control carousel__control--forward" for="F"></label>
         </div>
         <div class="carousel__track">
-          <li class="carousel__slide" *ngFor="let i of carousel" style="background-image: url({{i.image}});">
+          <li class="carousel__slide" *ngFor="let i of carousel" style="background-image: url({{i.image}});" loading="lazy">
             <h3> {{i.description}}</h3>
           </li>
         </div>
@@ -45,13 +45,13 @@
     </div>
 
     
-<div class="container shadow">
+<div class="container ">
       <div class="shadow mb-5 heading ">
           <h1 style="justify-content: center; display: flex;">
               About Us
             </h1>
       </div>
-    <div class="row shadow mb-5">
+    <div class="row  shadow mb-5">
         <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-sm-12">
             <div class="goal">
                 <h1 style="justify-content: center; display: flex;">
@@ -59,7 +59,7 @@
                   </h1>
             </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-12 col-xl-12 xol-sm-12">
+        <div class="col-12 col-md-12 col-lg-12 col-xl-12 xol-sm-12 ">
             <div class="about">
                 <p>
                     We are the <i>Robotics Club</i> of the <b><i>Indrapastha Institue of Information Technology, Delhi</i></b>.
@@ -125,7 +125,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-3 col-lg-3 col-xl-3  d-flex align-items-stretch" style="margin-bottom: 20px;" *ngFor="let m of members">
         <div class="card h-100">
-          <img src="{{m.Image}}" alt="{{m.Name}}" style="width:100%">
+          <img src="{{m.Image}}" alt="{{m.Name}}" style="width:100%" loading="lazy">
           <div class="content">
             <h3>{{m.Name}}</h3>
             <p class="title">{{m.Designation}}</p>

@@ -17,9 +17,12 @@ export class BlogComponent implements OnInit {
   project_class = Project;
   temp: Project;
   data_array=[];
+  mdPath:String;
   constructor(
     private markdownService: MarkdownService
-  ) { }
+  ) { 
+    this.getProjects();
+  }
 
   ngOnInit(): void {
     this.markdownService.renderer.heading = (text: string, level: number) => {
@@ -30,7 +33,7 @@ export class BlogComponent implements OnInit {
                '</a>' + text +
              '</h' + level + '>';
     };
-    this.getProjects();
+    this.mdPath='';
   }
   getProjects(){
     for(var i=0;i<this.data.length;i++){
@@ -40,7 +43,16 @@ export class BlogComponent implements OnInit {
       this.temp.Drive = this.data[i].Drive;
       this.temp.Github = this.data[i].Github;
       this.temp.Image = this.data[i].Image;
+      this.temp.MDFilePath = this.data[i].MDFile;
+      this.temp.Members = this.data[i].Members;
+      // [];
+      // for(var j=0;j<this.data[i].Members.length;j++){
+      //   this.temp.Members.push(this.data[i].Members[j]);
+      // }
       this.data_array.push(this.temp);
     }
+  }
+  fetchMd(a){
+    this.mdPath=a;
   }
 }

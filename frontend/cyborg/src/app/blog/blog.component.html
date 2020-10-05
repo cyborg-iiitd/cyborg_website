@@ -610,17 +610,22 @@
     </div>
 </div>
 <div class="container">
-  <div class="row d-flex justify-content-around mb-5">
-    <div class="card col-3" *ngFor="let i of data_array" style="margin-left: auto;">
+  <div class="row d-flex justify-content-center align-items-center mb-5">
+    <div class="card col-md-4 col-sm-12 col-lg-4 col-xl-4" *ngFor="let i of data_array" style="margin-left: auto;" (click)="fetchMd(i.MDFilePath)">
+      <a href="/projects#markdown">
       <img class="card-img-top" src="{{i.Image}}" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">{{i.Name}}</h5>
+        <h5 class="card-title">{{i.Title}}</h5>
         <p class="card-text">{{i.Description}}</p>
         <div class="card-body d-flex justify-content-center align-items-center">
           <a href="{{i.Drive}}" class="card-link"><i class="fab fa-google-drive"></i></a>
           <a href="{{i.Github}} " class="card-link"><i class="fa fa-github"></i></a>
         </div>
+        <p *ngFor="let j of i.Members">
+          {{j}}
+        </p>
       </div>
+      </a>
     </div>
   </div>
 </div>
@@ -641,11 +646,11 @@
 </div> -->
 <div class="container">
 
-  <markdown src="../../assets/README.md" lineNumbers style="height: 100px; width: auto;">
+  <markdown *ngIf="mdPath" src="{{mdPath}}"  id="markdown" lineNumbers style="height: 100px; width: auto;">
     ``` typescript
     ```
     </markdown>
 </div>
-<markdown [data]="markdown"  ngPreserveWhitespaces lineNumbers></markdown>  
+<!-- <markdown [data]="markdown"  ngPreserveWhitespaces lineNumbers></markdown>   -->
 <!-- <markdown [src]="../README.md" (load)="onLoad($event)" (error)="onError($event)"></markdown> -->
 <!-- <div markdown [src]="../../assets/a.md"></div> -->

@@ -1,9 +1,9 @@
 {
   "targets": {
-    "cyborgiiitd": {
+    "cyborgiiit": {
       "hosting": {
         "cyborg": [
-          "cyborgiiitd"
+          "cyborgiiit"
         ]
       }
     }
