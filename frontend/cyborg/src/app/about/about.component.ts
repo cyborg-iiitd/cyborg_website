@@ -28,8 +28,8 @@ export class AboutComponent implements OnInit {
   alumni=[];
   carousel=[];
   constructor() {
-    this.getMembers();
-    this.getAlumni();
+    // this.getMembers();
+    // this.getAlumni();
     this.getCarousel();
    }
 
@@ -72,19 +72,18 @@ export class AboutComponent implements OnInit {
   temp:any;
   getMembers(){
     this.members=[];
-    // console.log("host asd");
-    // for(var i=0;i<data.length;i++){
-    //   this.temp = new Member();
-    //   this.temp.Name=data[i]["Name"];
-    //   // this.temp.Designation=data[i]["Designation"];
-    //   // this.temp.Branch=data[i]["Branch"];
-    //   // this.temp.Email=data[i]["Email Address"];
-    //   // this.temp.Github=data[i]["Github Account"];
-    //   // this.temp.Linkedin=data[i]["LinkedIn Profile"];
-    //   // this.temp.Interests=data[i]["Academic Interests"];
-    //   // this.temp.Image=data[i]['Image'];
-    //   this.members.push(this.temp);
-    // }
+    for(var i=0;i<data.length;i++){
+      this.temp = new Member();
+      this.temp.Name=data[i]["Name"];
+      this.temp.Designation=data[i]["Designation"];
+      this.temp.Branch=data[i]["Branch"];
+      this.temp.Email=data[i]["Email Address"];
+      this.temp.Github=data[i]["Github Account"];
+      this.temp.Linkedin=data[i]["LinkedIn Profile"];
+      this.temp.Interests=data[i]["Academic Interests"];
+      this.temp.Image=data[i]['Image'];
+      this.members.push(this.temp);
+    }
   }
   
   getAlumni(){
