@@ -72,18 +72,19 @@ export class AboutComponent implements OnInit {
   temp:any;
   getMembers(){
     this.members=[];
-    for(var i=0;i<data.length;i++){
-      this.temp = new Member();
-      this.temp.Name=data[i]["Name"];
-      this.temp.Designation=data[i]["Designation"];
-      this.temp.Branch=data[i]["Branch"];
-      this.temp.Email=data[i]["Email Address"];
-      this.temp.Github=data[i]["Github Account"];
-      this.temp.Linkedin=data[i]["LinkedIn Profile"];
-      this.temp.Interests=data[i]["Academic Interests"];
-      this.temp.Image=data[i]['Image'];
-      this.members.push(this.temp);
-    }
+    // console.log("host asd");
+    // for(var i=0;i<data.length;i++){
+    //   this.temp = new Member();
+    //   this.temp.Name=data[i]["Name"];
+    //   // this.temp.Designation=data[i]["Designation"];
+    //   // this.temp.Branch=data[i]["Branch"];
+    //   // this.temp.Email=data[i]["Email Address"];
+    //   // this.temp.Github=data[i]["Github Account"];
+    //   // this.temp.Linkedin=data[i]["LinkedIn Profile"];
+    //   // this.temp.Interests=data[i]["Academic Interests"];
+    //   // this.temp.Image=data[i]['Image'];
+    //   this.members.push(this.temp);
+    // }
   }
   
   getAlumni(){
@@ -91,7 +92,7 @@ export class AboutComponent implements OnInit {
     for(var i=0;i<Alumni_data.length;i++){
         this.temp=new Alumni();
         this.temp.Name= Alumni_data[i]["Name"];
-        this.temp.image= Alumni_data[i]["image"];
+        // this.temp.image= Alumni_data[i]["image"];
         this.alumni.push(this.temp);
     }
   }
