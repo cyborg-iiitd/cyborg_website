@@ -12,12 +12,21 @@
 }
 h1{
     // font-family: 'Lobster Two', cursive;
-    font-family: 'PT Serif', serif;
+    font-family: 'Audiowide', ;
     font-size: 5rem;
     // position: relative;
     // margin-bottom: -10rem;
-    color: #283593;
+    color: white;
 }
+
+h5
+{
+  font-family: 'Audiowide' !important;
+}
+a{
+  color: black !important;
+}
+
 .head{
   display: flex;
 }
@@ -49,8 +58,8 @@ h1{
   transition: all 0.3s ease-in-out ;
 }
 h1, h2, h3 , h4, h6{
-  font-family: 'Lobster Two', cursive;
-  font-size: 5rem;
+  font-family: 'Audiowide', cursive;
+  font-size: 3rem;
 }
 .heading>h1{
   font-size: 3rem ;
@@ -64,7 +73,8 @@ h1, h2, h3 , h4, h6{
 h1{
   margin: 0px -500px 0px 0px ;
   z-index:100;
-  font-size: 250px;
+  font-size: 125px;
+  font-weight: bolder;
 }
 
 /* new header */
@@ -107,7 +117,7 @@ h1{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: black;
+    background: #222222;
     transform-origin: 50% 0;
     transform: translateY(100%) rotateX(-90deg);
     backface-visibility: hidden;
@@ -127,7 +137,7 @@ h1{
   backface-visibility: hidden;
   animation: slide 40000ms linear infinite;
   
-  @for $i from 1 through 200 {
+  @for $i from 1 through 300 {
     $width: random(150) + 30px;
     $height: random(400) + 20px;
     $depth: random(150) + 30px;

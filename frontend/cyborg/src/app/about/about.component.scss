@@ -1,26 +1,26 @@
 .heading{
   min-height: 100px;
-  background-color: white;
+  background-color: black;
   padding: 2rem;
-  
-  color: black;   
+  color: white;   
   border-radius: 10px;
-  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.2);
   align-items: center;
   justify-content: center;
   // width: 100vw;
   opacity: 1;
   transition: all 0.3s  ease-in-out;
+  font-weight: bolder;
 }
-.heading:hover{
-  background-color: black ;
-  color: white;
-  transform : translateY(5px);
-  cursor: none;
-  transition: all 0.3s ease-in-out ;
-}
+// .heading:hover{
+//   background-color: white ;
+//   color: black;
+//   transform : translateY(5px);
+//   // cursor: none;
+//   transition: all 0.3s ease-in-out ;
+// }
 h1, h2, h3 , h4, h5, h6{
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Audiowide', cursive;
 }
 .heading>h1{
     font-size: 3rem ;
@@ -81,7 +81,7 @@ body {
   * Control & indicator mixin
 */
 .carousel {
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   overflow: hidden;
   text-align: center;

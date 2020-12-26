@@ -33,7 +33,7 @@
 }
 h1{
     // font-family: 'Lobster Two', cursive;
-    font-family: 'PT Serif', serif;
+    font-family: 'Audiowide', ;
 }
 .heading>h1{
     font-size: 3rem ;
@@ -55,25 +55,32 @@ h1{
   align-items: center;
   display: flex
 }
-.container{
-    // margin-bottom: 50px;
-    // margin-top: 50px;
-}
+
 .shadow{
     /*border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.5);*/
     padding: 3rem;
-    min-height: 20rem;
-    // box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    min-height: 17rem;
+    box-shadow: 0 4px 17px rgba(255, 255, 255, 0.1) !important;
 }
 .about{
     padding:3rem;
     font-size: larger;
-    color: rgb(86,86,78)  ;
+    // color: rgb(86,86,78)  ;
+    color: rgba(255,255,255,0.8);
+    box-shadow: 0 4px 17px rgba(255, 255, 255, 1);
+}
+.about-content{
+    padding:2rem;
+    font-size: larger;
+    // color: rgb(86,86,78)  ;
+    color: rgba(255,255,255,0.8);
+    // box-shadow: 0 4px 17px rgba(255, 255, 255, 1);
 }
 .text, .text1 {
-  font-size: 28px;
-  color: rgb(86,86,78)  ;
+    font-size: 28px;
+    //   color: rgb(86,86,78)  ;
+    color: rgba(255,255,255,0.8);
 }
 .text{
     font-weight: bolder;
@@ -83,6 +90,10 @@ h1{
 }
 .dud {
   color: rgb(86,86,78)  ;
+}
+h4, p
+{
+    color:white;
 }
 
 @media only screen and (max-width:800px){
@@ -266,6 +277,6 @@ svg{
 
 
 #particles-js {
-    height: 100vh;
+    height: 70vh;
     background-color: black;
 }

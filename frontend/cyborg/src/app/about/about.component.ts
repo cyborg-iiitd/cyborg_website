@@ -14,6 +14,8 @@ import { Carousel } from '../../assets/about_us_carousel_class';
 
 import { Carousel_Data } from '../../assets/about_us_carousel_data';
 
+// import Hovercard from "hovercard";
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -34,6 +36,7 @@ export class AboutComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    // const cards = new Hovercard();
     // const targets = document.querySelectorAll(".card");
     // const lazyload = target =>{
     //   const io = new IntersectionObserver((entries, observer) => {

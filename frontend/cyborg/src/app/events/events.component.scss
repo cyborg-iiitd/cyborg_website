@@ -15,7 +15,31 @@
     transform: translateY(-10px);
     transition: all 1s ease-in-out;
 }
-h1{
+h1, h5{
     font-family: 'Audiowide', cursive;
 
+}
+canvas {
+    position: absolute;;
+    top:0%;
+    left:0%;
+    // margin-top:-300px;
+    // margin-left:-300px;
+}
+.heading{
+    min-height: 100px;
+    background-color: black;
+    padding: 2rem;
+    color: white;   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 4px rgba(255, 255, 255, 0.2);
+    align-items: center;
+    justify-content: center;
+    // width: 100vw;
+    opacity: 1;
+    transition: all 0.3s  ease-in-out;
+    font-weight: bolder;
+  }
+a{
+    color: black;
 }

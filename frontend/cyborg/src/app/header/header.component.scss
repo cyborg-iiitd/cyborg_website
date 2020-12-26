@@ -13,7 +13,7 @@ header{
     transition: all 0.3s;
     color:rgb(255,255,255);
     justify-content: center;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide',;
     z-index: 1000;
     box-shadow: 0 20px 30px rgba(0,0,0,0.3);
     transition: all 0.5s ease-in-out;
@@ -23,7 +23,7 @@ h1, h2{
     // padding-left:40px;
     font-weight: lighter;
     cursor: pointer;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide', ;
 }
 section{
     display:grid;

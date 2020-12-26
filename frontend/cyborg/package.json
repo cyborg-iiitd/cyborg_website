@@ -26,6 +26,7 @@
     "@zeit/ng-deploy": "^0.3.0",
     "bootstrap": "^4.5.2",
     "firebase": "^7.13.1",
+    "hovercard": "^2.0.3",
     "ngx-markdown": "^10.1.1",
     "particles.js": "^2.0.0",
     "rxjs": "~6.5.5",

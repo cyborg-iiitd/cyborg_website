@@ -45,7 +45,7 @@
     </div>
 
     
-<div class="container ">
+<!-- <div class="container ">
       <div class="shadow mb-5 heading ">
           <h1 style="justify-content: center; display: flex;">
               About Us
@@ -114,23 +114,23 @@
             </div>
         </div>
     </div>    
-</div>
-<div class="heading ">
+</div> -->
+<div class="heading mt-5 container">
   <h1 style="justify-content: center; display: flex;">
-     Meet the Team
+     MEET THE TEAM
   </h1>
 </div>
 <div class="team">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-3 col-lg-3 col-xl-3  d-flex align-items-stretch" style="margin-bottom: 20px;" *ngFor="let m of members">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-xl-3  d-flex align-items-stretch" style="margin-bottom: 20px;" *ngFor="let m of members">
         <div class="card h-100">
           <img src="{{m.Image}}" alt="{{m.Name}}" style="width:100%" >
-          <div class="content">
+          <div class="content mt-1">
             <h3>{{m.Name}}</h3>
-            <p class="title">{{m.Designation}}</p>
+            <p class="title" >{{m.Designation}}</p>
             <p>{{m.Branch}}</p>
-            <div style="margin: 24px 0;">
+            <div style="margin: 24px 0 0 0 ;">
               <a href="{{m.Github}}"><i class="fa fa-github" aria-hidden="true"></i></a> 
               <a href="{{m.Linkedin}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>  
               <a href="mailto:{{m.Email}}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -157,20 +157,19 @@
   <div class="container">
     <div class="row">
 
-      <div class=" col-xs-6 col-sm-6  col-md-m2 col-lg-2 col-xl-2" *ngFor="let a of alumni">
+      <div class=" col-xs-6 col-sm-6  col-md-m2 col-lg-2 col-xl-2 align-items-stretch" *ngFor="let a of alumni">
         <div class="card">
           <img src="../../assets/cyborg_alumni/{{a.image}}" alt="{{a.Name}}" style="width:100%">
-          <h1>{{a.Name}}</h1>
+          <h5 class="mt-2">{{a.Name}}</h5>
           <!-- <p class="title">Alumni</p> -->
-          <div style="margin: 24px 0;">
-          </div>
+          <!-- <div style="margin: 14px 0;">
+          </div> -->
         </div>
       </div>
 
     </div>
   </div>
 </div>
-
 
 <hr>
 <!-- <div id="feedback"></div>

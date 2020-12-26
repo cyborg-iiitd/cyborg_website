@@ -103,7 +103,7 @@ a{
     transform: translateX(16px);
 }
 
-.col-12 p{
+.col-12 p, .col-6 p{
     font-size: 1rem;
 }
 
@@ -137,7 +137,8 @@ a{
 
 
 a:hover{
-    color:#283593;
+    // color:#283593;
+    transform: translateY(-15px);
     // color:#22c0e8;
     transition: 0.5s all ease;
 }

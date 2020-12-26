@@ -1,7 +1,7 @@
-<div class="head d-flex justify-content-center align-items-center">
-  <h1 style="z-index:1000; margin: 0;">Projects</h1>
+<div class="head d-flex justify-content-center align-items-center" style="height: 70vh;">
+  <h1 style="z-index:1000; margin: 0;">PROJECTS</h1>
 </div>
-<div class="camera x" style="max-height: 100vh; overflow: hidden; margin-top: -20rem; background-color: lightgray;">
+<div class="camera x" style="max-height: 70vh; overflow: hidden; margin-top: -30rem; background-color: black; ;">
     <div class="camera y">
       <div class="camera z">
         <div class="city">
@@ -609,19 +609,19 @@
       </div>
     </div>
 </div>
-<div class="container">
-  <div class="row d-flex justify-content-center align-items-center mb-5">
-    <div class="card col-md-4 col-sm-12 col-lg-4 col-xl-4" *ngFor="let i of data_array" style="margin: auto;" (click)="fetchMd(i.MDFilePath)">
+<div class="container pl-5" >
+  <div class="row d-flex mb-5" >
+    <div class="card col-md-4 col-sm-12 col-lg-3 col-xl-3 mt-5" *ngFor="let i of data_array" style="margin-left: 40px;" (click)="fetchMd(i.MDFilePath)">
       <a href="/projects#markdown">
-      <img class="card-img-top" src="{{i.Image}}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{i.Title}}</h5>
-        <p class="card-text">{{i.Description}}</p>
-        <div class="card-body d-flex justify-content-center align-items-center">
-          <a href="{{i.Drive}}" class="card-link"><i class="fab fa-google-drive"></i></a>
-          <a href="{{i.Github}} " class="card-link"><i class="fa fa-github"></i></a>
+      <img class="card-img-top" src="{{i.Image}}" alt="Card image cap" style="margin-top:10px;">
+      <div class="card-body" style="margin-bottom: 0;">
+        <h5 class="card-title d-flex justify-content-center">{{i.Title}}</h5>
+        <p class="card-text" style="justify-content: stretch;">{{i.Description}}</p>
+        <div class="card-body d-flex justify-content-center align-items-center mt-0 mb-0 p-0">
+          <!-- <a href="{{i.Drive}}" class="card-link"><i class="fab fa-google-drive"></i></a> -->
+          <a href="{{i.Github}}" class="card-link"><i class="fa fa-github"></i></a>
         </div>
-        <p *ngFor="let j of i.Members">
+        <p *ngFor="let j of i.Members" style="margin: 0; padding: 0;">
           {{j}}
         </p>
       </div>
@@ -644,7 +644,7 @@
     # Markdown
   </markdown>
 </div> -->
-<div class="container">
+<div class="container" style="color: white;">
 
   <markdown *ngIf="mdPath" src="{{mdPath}}"  id="markdown" lineNumbers style="height: 100px; width: auto;">
     ``` typescript
