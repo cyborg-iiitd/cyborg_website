@@ -37,7 +37,7 @@ export class EventsComponent implements OnInit {
     console.log(this.data_array);
   }
 
-  addAnimation()
+ /* addAnimation()
   {
       
           var lastTime = 0;
@@ -276,5 +276,5 @@ export class EventsComponent implements OnInit {
 
       doTrace();
   }
-
+*/
 }
