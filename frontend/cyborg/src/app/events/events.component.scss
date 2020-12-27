@@ -17,7 +17,6 @@
 }
 h1, h5{
     font-family: 'Audiowide', cursive;
-
 }
 canvas {
     position: absolute;;
@@ -36,10 +35,35 @@ canvas {
     align-items: center;
     justify-content: center;
     // width: 100vw;
+    // position: absolute;
     opacity: 1;
     transition: all 0.3s  ease-in-out;
     font-weight: bolder;
   }
 a{
     color: black;
+}
+
+
+.st0 {
+    fill: none;
+    stroke: #1e3e92;
+    stroke-miterlimit: 10;
+  }
+  .st1 {
+    fill: none;
+    stroke: #1e3e92;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+  
+.card-animate:hover{
+    transform: translateY(-15px);
+    // color:#22c0e8;
+    transition: 0.5s all ease;
+}
+.card-animate{
+    // transform: translateY(-15px);
+    // color:#22c0e8;
+    transition: 0.5s all ease;
 }
