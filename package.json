@@ -24,6 +24,7 @@
     "@angular/router": "~11.0.5",
     "@ngmodule/material-carousel": "^0.6.0",
     "@zeit/ng-deploy": "^0.3.0",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "bootstrap": "^4.5.2",
     "firebase": "^7.13.1",
     "hovercard": "^2.0.3",
