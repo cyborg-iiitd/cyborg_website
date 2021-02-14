@@ -4,4 +4,4 @@ A static website made with Angular, Typescript based frontend technology, along 
 
 ## Deploying to gh-pages
     ng build --prod
-    ng deplot --bae-href = /cyborg_website/
+    ng deploy --base-href=/cyborg_website/
