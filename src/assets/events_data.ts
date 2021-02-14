@@ -1,6 +1,14 @@
 export const Event_data=[
     {
-        "Title":"Introduction to Control Theory: PID Controller ",
+        "Title":"Control Theory: Space State Models",
+        "Description":"A discussion on state space models. They are used in many contexts including daystock markets, robotics, missile control. We discussed about various model analysis techniques, rich enough to be applied in any system.",
+        "Drive":"https://drive.google.com/drive/folders/1P8yF8G37KjnEj1ALqlskAmUf2F2LY9BC?usp=sharing",
+        "Github":"#",
+        "Image":"https://drive.google.com/uc?export=view&id=1nnFyaJdRKQbY9tvgT4-yykLSNlCv-39B",
+        "Date": "21/09/2020"
+    },
+    {
+        "Title":"Introduction to Control Theory: PID Controller",
         "Description":"An introduction to Control Theory and its numerous applications.The first session in series was on PID (proportional–integral–derivative) controls. Starting with a very simple model, we build up to real life applications like drone flying.",
         "Drive":"https://drive.google.com/drive/folders/1cClnf2w89DIx7YGE6G2eAES-QdNphrzQ?usp=sharing",
         "Github":"#",
@@ -24,3 +32,4 @@ export const Event_data=[
         "Date" : "25/09/2019"   
     }
 ]
+
