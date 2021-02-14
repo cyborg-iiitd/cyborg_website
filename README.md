@@ -5,3 +5,6 @@ A static website made with Angular, Typescript based frontend technology, along 
 ## Deploying to gh-pages
     ng build --prod
     ng deploy --base-href=/cyborg_website/
+
+### Reference
+    https://www.npmjs.com/package/angular-cli-ghpages
