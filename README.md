@@ -6,5 +6,8 @@ A static website made with Angular, Typescript based frontend technology, along 
     ng build --prod
     ng deploy --base-href=/cyborg_website/
 
+## Websites
+    - ![Github-pages](https://cyborg-iiitd.github.io/cyborg_website/)
+    - ![IIIT Delhi](https://cyborg.iiitd.edu.in/)
 ### Reference
     https://www.npmjs.com/package/angular-cli-ghpages
